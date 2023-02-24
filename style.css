@@ -1,9 +1,5 @@
 
 
-
-
-
-
   .shake {
     animation: shake-slow 3s;
   }
@@ -443,6 +439,7 @@
   padding-bottom: 20px;
   padding-top: 30px;
 }
+
 .result-button:active .container-result {
   transform: translateY(0);
 }
