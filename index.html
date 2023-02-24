@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Buda&family=Inter:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +28,7 @@
     />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css" integrity="sha512-52iYFYEOPiH9mTUxADaw8Lux1ycFqSEZ50Rc4usS3eJX4DA6xIEBK7OdKQpKvKDR4M41OOSErCSgYq7Z9Mqq5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
@@ -40,11 +41,14 @@
                 <a class="menu-link" href="url">Thực Đơn</a>
                 <a class="card-link" href="url">Bốc Quẻ</a>
             </div>
-
         </div>
     </section>
 
     <!-- Ending-navigation-section -->
+
+
+
+    <!-- Start-Hero-section -->
 
     <section class="hero-banner">
         <div class="hero-container">
@@ -72,6 +76,13 @@
         </div>
     </section>
 
+    <!-- Ending-Hero-section -->
+
+
+
+
+    <!-- Start-Clock-section -->
+
     <section class="clock">
         <div class="time">
             <span class="hms"></span>
@@ -83,11 +94,16 @@
         <p class="clock-title">
             Tối nay ăn gì?
         </p>
-          <!-- partial -->
 
+        <script src="./js/clock.js"></script>
 
     </section>
 
+    <!-- Ending-Clock-section -->
+
+
+
+    <!-- Start-Lucky-card-section -->
     
     <section class="card">
             <div class="container">
@@ -115,32 +131,11 @@
                             <img src="pictrure/my-van-than-ngon.jpg" alt="dishes-image">
                         </div>
                     </button>
-
-                    <script>
-                        $(".result-button").on("click", function () {
-
-                        $(".result-button").removeClass("selected");
-                            
-                        $(this).addClass("selected");
-                            
-                        });
-                    </script>
-                    
-
-
                 </div>
-
-
-              
-
             </div>
-
-
-        </div>
-
-    
-
     </section>
+
+    <!--Ending-Lucky-card-section -->
 
     <script  src="index.js"></script>
 

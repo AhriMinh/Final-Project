@@ -262,6 +262,8 @@
   text-align: center;
 }
 
+/* start-lucky-card-section */
+
 .box-container {
   position: relative;
   width: 200px;
@@ -272,25 +274,14 @@
 }
 
 
-
-
-
 .box-image {
   position: relative;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
   z-index: 3;
-  
 }
 
-.wooden-table {
-  position:absolute;
-  top: 10px;
-  left: -280px;
-  z-index: 2;
-
-}
 
 .card-image {
   position: absolute;
@@ -310,17 +301,15 @@
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat, repeat;
-  background-image: url(pictrure/Cherry_Blossom_45_B.jpg);
+  background-image: url(../pictrure/Cherry_Blossom_45_B.jpg);
   background-size: cover;
   background-image: opacity;
   margin: 0 auto;
   border-radius: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
-
   position: relative;
   overflow: hidden;
-
 }
 
 .button-container {
@@ -416,7 +405,7 @@
   left: 0;
   right: 0;
   transform: translateY(150%);
-  transition: transform 0.3s ease-in;
+  transition: transform 0.5s ease-in;
   overflow: auto;
 }
 
@@ -443,3 +432,5 @@
 .result-button:active .container-result {
   transform: translateY(0);
 }
+
+/* end-lucky-card-section */
