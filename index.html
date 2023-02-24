@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Work+Sans:200,300'><link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Buda&family=Inter:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css" integrity="sha512-52iYFYEOPiH9mTUxADaw8Lux1ycFqSEZ50Rc4usS3eJX4DA6xIEBK7OdKQpKvKDR4M41OOSErCSgYq7Z9Mqq5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="navigation">
+        <div class="container-sm">
+            <img class="logo" src="pictrure/todaydisheslogo.png">
+            <div class="navigation-options">
+                <a class="menu-link" href="url">Thực Đơn</a>
+                <a class="card-link" href="url">Bốc Quẻ</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="hero-banner">
+        <div class="hero-container">
+            
+            <div class="conversation">
+                <div class="hero-title-asking">
+                    Are you struggling because don't know what to eat today?
+                </div>
+                
+                <div class="hero-title-answer">
+                    Don't worry! <br> We were born to help you
+                </div>
+            </div>
+
+            <h1 class="hero-name">
+                TODAY'S DISHES
+            </h1>
+            <div class="hero-desc">
+                Let our website decide your meal, so you can focus on enjoying it!
+            </div>
+
+            <button class="hero-button-donate">Donate Us</button>
+
+            <button class="hero-button-takecard">Take a Card</button>
+        </div>
+    </section>
+
+    <section class="clock">
+        <div class="time">
+            <span class="hms"></span>
+            <span class="ampm"></span>
+            <br>
+            <span class="date"></span>
+        </div>
+
+        <p class="clock-title">
+            Tối nay ăn gì?
+        </p>
+          <!-- partial -->
+
+
+    </section>
+
+    
+    <section class="card">
+            <div class="container">
+                <div class="box-container">
+                    <img src="pictrure/thebox.jpg" alt="Ảnh" class="box-image">
+                    <img src="pictrure/thecard.jpg" alt="Ảnh" class="card-image">
+                </div>
+
+                <div class="button-container">
+                    <button id="show-box">
+                        <div class="icon-container">
+                            <i class="fa fa-utensils"></i>
+                        </div>
+                        Draw a lucky card
+                    </button>
+    
+                    <button class="result-button">
+                        <div class="icon-container">
+                            <i class="fa fa-utensils"></i>
+                        </div>
+                        Decipher lucky card
+                        <div class="container-result">
+                            <h2> Today's Dishes:</h2>
+                            <p>Mỳ vằn thắn</p>
+                            <img src="pictrure/my-van-than-ngon.jpg" alt="dishes-image">
+                        </div>
+                    </button>
+
+                    <script>
+                        $(".result-button").on("click", function () {
+
+                        $(".result-button").removeClass("selected");
+                            
+                        $(this).addClass("selected");
+                            
+                        });
+                    </script>
+                    
+
+
+                </div>
+
+
+              
+
+            </div>
+
+
+        </div>
+
+    
+
+    </section>
+
+
+    
+
+
+    <script  src="index.js"></script>
+
+</body>
+
+</html>
