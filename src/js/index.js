@@ -23,30 +23,9 @@ function updateTime() {
     document.getElementsByClassName("ampm")[0].innerHTML = ampm;
   
     /* date */
-    var dow = [
-        "Sunday",
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      month = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
-      ],
-      day = dateInfo.getDate();
+    var dow = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday", "Saturday"],
+        month = ["January","February","March","April","May","June","July","August","September","October","November","December"],
+        day = dateInfo.getDate();
   
     // store date
     var currentDate = dow[dateInfo.getDay()] + ", " + month[dateInfo.getMonth()] + " " + day;
@@ -55,7 +34,6 @@ function updateTime() {
   };
   
   // print time and date once, then update them every second
-  updateTime();
   setInterval(function() {
     updateTime()
   }, 1000);
