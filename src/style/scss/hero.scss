@@ -1,13 +1,24 @@
 .hero-title-asking {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: "Work Sans", sans-serif;
     max-width: 500px;
   }
 
   .hero-title-answer {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
     max-width: 500px;
+    font-family: "Work Sans", sans-serif;
+  }
+  .hero-name {
+    font-size: 100px;
+    font-family: Pacifico;
+    text-shadow: 7px 7px #f58590;
+    color: #ECB3B9;
+  }
+  .hero-desc {
+    font-size: 40px;
+    font-weight: 400;
     font-family: "Work Sans", sans-serif;
   }
