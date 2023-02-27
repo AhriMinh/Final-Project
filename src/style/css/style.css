@@ -3,38 +3,42 @@
   color: black;
 }
 
-.hero-title-asking {
-  font-size: 30px;
-  font-weight: 400;
-  font-family: "Work Sans", sans-serif;
-  max-width: 500px;
-}
-
-.hero-title-answer {
-  font-size: 30px;
-  font-weight: 400;
-  max-width: 500px;
+.hero-title {
+  font-size: 25px;
+  font-weight: 300;
   font-family: "Work Sans", sans-serif;
 }
 
 .hero-name {
-  font-size: 100px;
+  font-size: 95px;
   font-family: Pacifico;
   text-shadow: 7px 7px #f58590;
-  color: #ECB3B9;
+  color: #ecb3b9;
+  text-align: left;
 }
 
 .hero-desc {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 400;
+  font-family: "Pacifico", sans-serif;
+  text-align: left;
+  color: green;
+  padding-left: 20px;
+}
+
+.hero-button {
+  height: 65px;
+  width: 180px;
+  border-radius: 35px;
   font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  border: solid 1px black;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
