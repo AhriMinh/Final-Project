@@ -1,127 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tối nay ăn gì?</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/style/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Work+Sans:200,300"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Buda&family=Inter:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tối nay ăn gì?</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./src/style/css/style.css" />
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Work+Sans:200,300'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Buda&family=Inter:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&family=Sevillana&family=Simonetta:ital@0;1&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!-- navigation -->
+    <div>
+      <nav class="nav navbar-expand-sm" id="navigation">
+        <div class="container-fluid d-flex">
+          <div class="col-1">
+            <p></p>
+          </div>
 
-<body>
-  <!-- navigation -->
-  <div>
-    <nav class="nav navbar-expand-sm" id="navigation">
-      <div class="container-fluid d-flex">
-        <div class="col-1">
-          <p></p>
-        </div>
-
-
-        <div class="container">
-          <div class="row justify-content-md-center p-2">
-            <div class="col-10">
-              <div class="row">
-                <div class="col-4">
-                  <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                      <img src="./src/pictrure/todaydisheslogo.png" alt="Logo" style="width: 200px"
-                        class="rounded-pill" />
-                    </a>
+          <div class="container">
+            <div class="row justify-content-md-center p-2">
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img
+                          src="./src/pictrure/todaydisheslogo.png"
+                          alt="Logo"
+                          style="width: 200px"
+                          class="rounded-pill"
+                        />
+                      </a>
+                    </div>
                   </div>
-
-                </div>
-                <div class="col-8 d-flex flex-column justify-content-center">
-                  <div class="d-flex justify-content-end">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                    </ul>
+                  <div class="col-8 d-flex flex-column justify-content-center">
+                    <div class="d-flex justify-content-end">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Realtime clocl -->
-        <div class="col-1">
-          <section class="clock">
-            <div class="time">
-              <p id="realTimeClock"></p>
-            </div>
-          </section>
-        </div>
-        <!-- End of clock -->
-      </div>
-    </nav>
-  </div>
-  <!-- End of navi -->
-
-  <!-- Hero -->
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <div class="row d-flex justify-content-around">
-          <div class="col-5 d-flex flex-column align-items-center justify-content-evenly">
-            <div>
-              <div class="hero-title">
-                Are you struggling because don't know what to eat today?
+          <!-- Realtime clocl -->
+          <div class="col-1">
+            <section class="clock">
+              <div class="time">
+                <p id="realTimeClock"></p>
               </div>
-              <div class="hero-title">
-                Don't worry! <br />
-                We were born to help you
-              </div>
-            </div>
-            <div class="container-fluid d-flex justify-content-evenly">
-              <button class="hero-button">Donate Us</button>
-              <button class="hero-button">Take a Card</button>
-            </div>
+            </section>
           </div>
-          <div class="col-7">
-            <div class="container">
-              <div class="d-flex justify-content-end">
-                <p class="hero-name">TODAY'S DISHES</p>
+          <!-- End of clock -->
+        </div>
+      </nav>
+    </div>
+    <!-- End of navi -->
+
+    <!-- Hero -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="row d-flex justify-content-around">
+            <div
+              class="col-5 d-flex flex-column align-items-center justify-content-evenly"
+            >
+              <div>
+                <div class="hero-title">
+                  Are you struggling because don't know what to eat today?
+                </div>
+                <div class="hero-title">
+                  Don't worry! <br />
+                  We were born to help you
+                </div>
+              </div>
+              <div class="container-fluid d-flex justify-content-evenly">
+                <button class="hero-button">Donate Us</button>
+                <button class="hero-button">Take a Card</button>
               </div>
             </div>
-            <div class="hero-desc">
-              <p>Let our website decide your meal, so you can focus on enjoying it!</p>
+            <div class="col-7">
+              <div class="container">
+                <div class="d-flex justify-content-end">
+                  <p class="hero-name">TODAY'S DISHES</p>
+                </div>
+              </div>
+              <div class="hero-desc">
+                <p>
+                  Let our website decide your meal, so you can focus on enjoying
+                  it!
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End of hero -->
+    <!-- End of hero -->
 
-  <script type="module" src="./src/js/main.js"></script>
-
-  <!-- Bootraps 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    crossorigin="anonymous"></script>
-  <!-- Bootraps 5 JS -->
-
-</body>
-
+    
+    <script type="module" src="./src/js/main.js"></script>
+    <!-- Bootraps 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootraps 5 JS -->
+  </body>
 </html>
