@@ -23,3 +23,18 @@
   });
 
 
+
+  // Bắt sự kiện nhấn nút
+  showBoxButton.addEventListener('click', function() {
+    // Thiết lập hàm đếm thời gian 3 giây
+    setTimeout(function() {
+      // Hàm thông báo sẽ được gọi sau 3 giây
+      alert('Bạn đã bốc quẻ thành công, ấn và giữ nút "Dechiper lucky card" để giải quẻ và xem kết quả nhé!');
+    }, 3000); // 3000ms = 3 giây
+  });
+
+  //nút làm mới trang
+
+  function refreshPage() {
+    location.reload();
+}

@@ -51,31 +51,42 @@
 
     <!-- Start-Hero-section -->
 
-    <section class="hero-banner">
-        <div class="hero-container">
+    <div class="container-fluid">
+        <img class="hero-background" src="pictrure/top_imageb.jpg" style="position: relative; z-index: -3; opacity: 0.2; width: 100%;">
+        <div class="row justify-content-center align-items-center" style="position: absolute; top: 450px; margin: 0 auto;">
             
-            <div class="conversation">
-                <div class="hero-title-asking">
-                    Are you struggling because don't know what to eat today?
-                </div>
-                
-                <div class="hero-title-answer">
-                    Don't worry! <br> We were born to help you
+
+            <div class="col-12">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-5 d-flex flex-column align-items-center justify-content-evenly">
+                        <div>
+                        <div class="hero-title">
+                            Are you struggling because don't know what to eat today?
+                        </div>
+                        <div class="hero-title">
+                            Don't worry! <br />
+                            We were born to help you
+                        </div>
+                        </div>
+                        <div class="container-fluid d-flex justify-content-center gap-5">
+                        <button class="hero-button" style="background-color:#ecb3b9;">Donate Us</button>
+                        <button class="hero-button" style="background-color:white;">Take a Card</button>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="container">
+                        <div class="d-flex justify-content-end">
+                            <p class="hero-name">TODAY'S DISHES</p>
+                        </div>
+                        </div>
+                        <div class="hero-desc">
+                        <p>Let our website decide your meal, so you can focus on enjoying it!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <h1 class="hero-name">
-                TODAY'S DISHES
-            </h1>
-            <div class="hero-desc">
-                Let our website decide your meal, so you can focus on enjoying it!
-            </div>
-
-            <button class="hero-button-donate">Donate Us</button>
-
-            <button class="hero-button-takecard">Take a Card</button>
         </div>
-    </section>
+    </div>
 
     <!-- Ending-Hero-section -->
 
@@ -107,20 +118,31 @@
     <!-- Start-Lucky-card-section -->
     
     <section class="lucky-card">
-            <div class="container">
+            <div class="lucky-card-container">
                 <div class="box-container">
                     <img src="pictrure/thebox.jpg" alt="Ảnh" class="box-image">
                     <img src="pictrure/thecard.jpg" alt="Ảnh" class="card-image">
                 </div>
+                
 
                 <div class="button-container">
+
+                    <button class="renew-button" onclick="refreshPage()">
+                        <div class="icon-container">
+                            <i class="fa fa-sync"></i>
+                        </div>
+                        Renew the cards
+                    </button>
+
+
                     <button id="show-box">
                         <div class="icon-container">
                             <i class="fa fa-utensils"></i>
                         </div>
                         Draw a lucky card
                     </button>
-    
+
+
                     <button class="result-button">
                         <div class="icon-container">
                             <i class="fa fa-utensils"></i>
@@ -569,12 +591,111 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-
-
-
-
-        
     </section>
+
+    <!--Ending-menu-section -->
+
+
+    <!-- Start-About-us-section -->
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <div class="our-goal container-fluid">
+            <div class="our-goal-text">
+                <h3>Our Goals</h3>
+                <p>Chúng tôi là một trang web giúp bạn trả lời câu hỏi kinh điển ngày nay: "Hôm nay ăn gì?" 
+                    Để bạn có thể tận hưởng món ăn của mình một cách trọn vẹn nhất mà không hao tổn tâm lực vì một câu hỏi không có lời giải. 
+                    Những sự lựa chọn được mang đến không chỉ là những món ăn ngon - đặc sản của nhiều vùng đến từ quốc gia Việt Nam, mà còn đảm bảo có đầy đủ dinh dưỡng và năng lượng cho ngày dài.
+                </p>
+                <ul>
+                    <li>Đem đến câu trả lời nhanh chóng</li>
+                    <li>Sự lựa chọn về đồ ăn đa dạng</li>
+                    <li>Hoàn toàn miễn phí</li>
+                </ul>
+            </div>
+
+            <div class="our-goal-img">
+                <img src="pictrure/animemaid-removebg-preview.png">
+            </div>
+        </div>
+
+
+
+        <h3 class="our-member-title">Our members</h3>
+        <div class="our-members">
+            <div class="member">
+                <img class="member-avatar" src="pictrure/member-1.jpg">
+                <h3>Dương Quang Minh</h3>
+                <p>Founder</p>
+                <div class="member-link">
+                    <a href="https://www.facebook.com/profile.php?id=100011550905634"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dgqgminh/?fbclid=IwAR3n5A4QuPtsY62mwXg0qyISZQX-dYmWYbmyTT0l-MiyGU49Q0zZFu12FrA"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/AhriMinh"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="member">
+                <img class="member-avatar" src="pictrure/member-2.jpg">
+                <h3>Dương Quang Minh</h3>
+                <p>Founder</p>
+                <div class="member-link">
+                    <a href="https://www.facebook.com/profile.php?id=100011550905634"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dgqgminh/?fbclid=IwAR3n5A4QuPtsY62mwXg0qyISZQX-dYmWYbmyTT0l-MiyGU49Q0zZFu12FrA"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/AhriMinh"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Ending-about-us-section -->
+
+    <section class="footer">
+        <div class="footer-title">
+            <div class="footer-category">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="footer-category">
+                <h2>Drop By</h2>
+            </div>
+
+            <div class="footer-category">
+                <h2>Drop By</h2>
+            </div>
+
+            <div class="footer-category">
+                <h2>Follow Us</h2>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-content-category">
+                <p>Info@freshy.com</p>
+                <p>Contact@freshy.com</p>
+            </div>
+
+            <div class="footer-content-category">
+                <p>St. Downtown,</p> 
+                <p>Ottawa, Canada</p>
+                <p>001 213 542 689 256</p>
+            </div>
+
+            <div class="footer-content-category">
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+
+            <div class="footer-content-category">
+                <p>Website by Matay Creative</p>
+                <p>©2022. All Rights Reserved</p>
+            </div>
+        </div>
+
+    </section>
+
+
 
     
 
