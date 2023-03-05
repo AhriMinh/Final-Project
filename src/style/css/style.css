@@ -1,12 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 #navigation {
-  background-color: #ffedef;
+  background-color: rgb(255, 235, 237);
   color: black;
+}
+
+#hero {
+  position: relative;
+  background-image: url("/src/pictrure/top_imageb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-title {
   font-size: 25px;
   font-weight: 300;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Pacifico", sans-serif;
 }
 
 .hero-name {
@@ -22,12 +45,12 @@
   font-weight: 400;
   font-family: "Pacifico", sans-serif;
   text-align: left;
-  color: green;
+  color: black;
   padding-left: 20px;
 }
 
 .hero-button {
-  height: 65px;
+  height: 60px;
   width: 180px;
   border-radius: 35px;
   font-family: "Work Sans", sans-serif;
@@ -35,8 +58,8 @@
   border: solid 1px black;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.button-active {
+  background-color: #ecb3b9;
 }
+
+/*# sourceMappingURL=style.css.map */
