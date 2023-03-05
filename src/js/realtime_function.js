@@ -8,7 +8,7 @@ export function updateTime() {
       second: "numeric",
     })
     .toString();
-  console.log(timeInfo);
+  // console.log(timeInfo);
   // /* time */
   // let hr,
   //   _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),

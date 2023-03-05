@@ -1,11 +1,13 @@
-@import "colors";
-@import "nav";
-@import "hero";
-@import "realtime";
-    
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     // border: 1px solid black;
 }
+
+@import "colors";
+@import "nav";
+@import "hero";
+@import "realtime";
+@import "about-us";
+@import "footer";
